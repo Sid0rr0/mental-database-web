@@ -1,6 +1,6 @@
 import {
 	Box,
-	Link,
+	Link as ChakraLink,
 	Menu,
 	MenuButton,
 	MenuItem,
@@ -9,77 +9,111 @@ import {
 	Stack,
 	Heading,
 } from "@chakra-ui/core";
+import Link from "next/link";
 
-interface NavbarProps {}
-
-export const Navbar: React.FC<NavbarProps> = ({}) => {
+const Navbar: React.FC = ({}) => {
 	return (
-		<nav>
-			<Box
-				width="100%"
-				height={["3em", "3em", "4em", "4em"]}
-				bg="#FFFF00"
-				display="flex"
-				justifyContent="space-between"
+		<Box
+			width="100%"
+			height={["3em", "3em", "4em", "5em"]}
+			bg="#F9F09B"
+			display="flex"
+			justifyContent="space-between"
+			position="fixed"
+			top="0"
+			left="0"
+			zIndex="69"
+			as="nav"
+		>
+			<Heading
+				fontWeight="normal"
+				ml={[2, 3, 4, 5]}
+				fontSize={["2xl", "3xl", "4xl", "5xl"]}
+				textDecoration="none"
+				verticalAlign="middle"
+				my="auto"
 			>
-				<Heading fontWeight="normal" ml={3}>
-					<Link
-						href="#"
-						fontSize={["xl", "2xl", "3xl", "4xl"]}
-						textDecoration="none"
-						verticalAlign="middle"
-						_hover={{ textDecoration: "none" }}
-					>
-						Mental Data(Base)
-					</Link>
-				</Heading>
+				<Link href="/">
+					<a>DUŠEVNÍ (data)BÁZE</a>
+				</Link>
+			</Heading>
 
-				<Menu>
-					{({ isOpen }) => (
-						<>
-							<MenuButton
-								isActive={isOpen}
-								as={Button}
-								bg="none"
-								w="2em"
-								m={["1", "1", "2", "3"]}
-								_active={{ bg: "none" }}
-							>
-								{/* {isOpen ? "y" : "x"} */}
+			<Menu>
+				{({ isOpen }) => (
+					<>
+						<MenuButton
+							isActive={isOpen}
+							as={Button}
+							bg="none"
+							w={["3em", "3em", "4em", "5em"]}
+							mr={[1, 2, 3, 4]}
+							my="auto"
+							_active={{ bg: "none" }}
+						>
+							{isOpen ? (
+								<svg viewBox="0 0 96 96">
+									<polygon
+										fill="black"
+										points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "
+									/>
+								</svg>
+							) : (
 								<svg
 									fill="black"
-									width="16px"
 									viewBox="0 0 20 20"
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<title>Menu</title>
 									<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
 								</svg>
-							</MenuButton>
-							<MenuList
-								w="100%"
-								h="100%"
-								p={0}
-								border="none"
-								position="fixed"
-								top={["2em", "3em", "4em", "5em"]}
-								left={0}
+							)}
+						</MenuButton>
+						<MenuList
+							w="100%"
+							h="100%"
+							p={0}
+							border="none"
+							position="fixed"
+							top={["2em", "3em", "4em", "5em"]}
+							left={0}
+						>
+							<Stack
+								spacing={2}
+								fontSize={["2xl", "3xl", "4xl", "5xl"]}
 							>
-								<Stack
-									spacing={2}
-									fontSize={["2xl", "3xl", "4xl", "5xl"]}
-								>
-									<MenuItem>Akutní pomoct</MenuItem>
-									<MenuItem>Databáze</MenuItem>
-									<MenuItem>Dotazník</MenuItem>
-									<MenuItem>Informace</MenuItem>
-									<MenuItem>O webu</MenuItem>
-								</Stack>
-							</MenuList>
-						</>
-					)}
-				</Menu>
-			</Box>
-		</nav>
+								<MenuItem justifyContent="center">
+									<Link href="/help">
+										<a>Akutní pomoct</a>
+									</Link>
+								</MenuItem>
+								<MenuItem justifyContent="center">
+									<Link href="/database">
+										<a>Databáze</a>
+									</Link>
+								</MenuItem>
+								<MenuItem justifyContent="center">
+									<Link href="/questionaire">
+										<a>Dotazník</a>
+									</Link>
+								</MenuItem>
+
+								<MenuItem justifyContent="center">
+									<Link href="/information">
+										<a>Informace</a>
+									</Link>
+								</MenuItem>
+								<MenuItem justifyContent="center">
+									<Link href="/about">
+										<a>O webu</a>
+									</Link>
+								</MenuItem>
+							</Stack>
+						</MenuList>
+					</>
+				)}
+			</Menu>
+		</Box>
 	);
 };
+
+export default Navbar;

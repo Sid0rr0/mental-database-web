@@ -57,28 +57,28 @@ const Index = () => (
 				<Heading>Akutní pomoc</Heading>
 				<HelpCard
 					title="Linka první psychické pomoci"
-					number="116 123"
-					open="nonstop"
+					numbers={["116 123"]}
+					open={["nonstop"]}
 				/>
 				<HelpCard
 					title="Pražská linka důvěry"
-					number="222 580 697"
-					open="nonstop"
+					numbers={["222 580 697"]}
+					open={["nonstop"]}
 				/>
 				<HelpCard
 					title="Linka důvěry Centra krizové intervence PN Bohnice"
-					number="284 016 666"
-					open="nonstop"
+					numbers={["284 016 666"]}
+					open={["nonstop"]}
 				/>
 				<HelpCard
 					title="Linka naděje Brno"
-					number="547 212 333"
-					open="nonstop"
+					numbers={["547 212 333"]}
+					open={["nonstop"]}
 				/>
 				<HelpCard
 					title="Linka bezpečí"
-					number="116 111"
-					open="nonstop"
+					numbers={["116 111"]}
+					open={["nonstop"]}
 				/>
 			</Stack>
 			<Stack as="section" align="center">

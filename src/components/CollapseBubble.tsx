@@ -33,7 +33,6 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 	return (
 		<>
 			<Button
-				id="aaaaaa"
 				onClick={handleToggle}
 				bg="yellow"
 				rounded={["1rem", "2rem", "3rem", "4rem"]}

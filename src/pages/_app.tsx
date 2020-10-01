@@ -1,14 +1,17 @@
-import { ChakraProvider } from '@chakra-ui/core'
+import { ChakraProvider } from "@chakra-ui/core";
 
-import theme from '../theme'
-import { AppProps } from 'next/app'
+import theme from "../theme";
+import { AppProps } from "next/app";
+import { TagProvider } from "../utils/TagContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ChakraProvider resetCSS theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
+	return (
+		<TagProvider>
+			<ChakraProvider resetCSS theme={theme}>
+				<Component {...pageProps} />
+			</ChakraProvider>
+		</TagProvider>
+	);
 }
 
-export default MyApp
+export default MyApp;

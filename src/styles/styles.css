@@ -1,0 +1,8 @@
+@font-face {
+	font-family: standard;
+	src: url("./standard-book-webfont.woff2");
+}
+
+* {
+	font-family: standard;
+}

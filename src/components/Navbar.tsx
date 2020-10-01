@@ -23,6 +23,7 @@ const Navbar: React.FC = ({}) => {
 			top="0"
 			left="0"
 			zIndex="69"
+			pb={1}
 			as="nav"
 		>
 			<Heading
@@ -49,6 +50,7 @@ const Navbar: React.FC = ({}) => {
 							mr={[1, 2, 3, 4]}
 							my="auto"
 							_active={{ bg: "none" }}
+							_focus={{ bg: "none" }}
 						>
 							{isOpen ? (
 								<svg viewBox="0 0 96 96">
@@ -72,10 +74,11 @@ const Navbar: React.FC = ({}) => {
 							w="100%"
 							h="100%"
 							p={0}
+							pt={["0", "0", "0", "1em"]}
 							border="none"
 							position="fixed"
-							top={["2em", "3em", "4em", "5em"]}
 							left={0}
+							background="yellow"
 						>
 							<Stack
 								spacing={2}

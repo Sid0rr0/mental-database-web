@@ -29,16 +29,15 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 	const handleToggle = () => {
 		setShow(!show);
 	};
-
+	//todo make responi
 	return (
 		<>
 			<Button
 				onClick={handleToggle}
-				bg="yellow"
+				bg="#FFF"
 				rounded={["1rem", "2rem", "3rem", "4rem"]}
 				w={["21rem", "22rem", "23rem", "24rem"]}
 				_focus={{ outline: "0" }}
-				_hover={{ background: "yellow" }}
 			>
 				{title}
 			</Button>
@@ -50,7 +49,7 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 					alignItems="center"
 					justifyContent="center"
 					w={["21rem", "22rem", "23rem", "24rem"]}
-					bg="yellow"
+					bg="#FFF"
 					pt={5}
 					pb={3}
 					roundedBottom={["0.75rem", "1rem", "1.25rem", "1.5rem"]}

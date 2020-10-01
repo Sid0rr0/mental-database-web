@@ -31,7 +31,7 @@ const index: React.FC = () => {
 					</Text>
 					<BigButton
 						text="Netuším, co mě trápí"
-						link="/crossroad"
+						link="/questionaire"
 						w={["10.5em", "11em", "11.5em", "12em"]}
 					/>
 					<Text mt={1} fontSize={["sm", "md", "md", "md"]}>

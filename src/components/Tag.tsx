@@ -6,17 +6,17 @@ interface TagProps {
 	name: string;
 }
 const Tag: React.FC<TagProps> = ({ name }) => {
-	const [shadow, setShadow] = useState("");
+	const [bgColor, setBgColor] = useState("");
 	const tagsContext = useTags();
 
 	const handleSelect = () => {
 		const tags = tagsContext?.tags;
 		if (tags?.includes(name)) {
 			tagsContext?.deleteTag(name);
-			setShadow("");
+			setBgColor("");
 		} else {
 			tagsContext?.addTag(name);
-			setShadow("2px 2px 8px 4px rgba(0,0,0,0.75)");
+			setBgColor("#00F");
 		}
 	};
 
@@ -24,7 +24,7 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 		<Box
 			border="1px"
 			rounded="20px"
-			borderColor="black.400"
+			borderColor="#000"
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
@@ -35,7 +35,8 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 			_hover={{ boxShadow: "2px 2px 8px 4px rgba(0,0,0,0.75)" }}
 			cursor="pointer"
 			onClick={handleSelect}
-			boxShadow={shadow}
+			bgColor={bgColor}
+			color={bgColor === "" ? "#000" : "#FFF"}
 		>
 			{/* {name.charAt(0).toUpperCase() + name.slice(1)} */ name}
 		</Box>

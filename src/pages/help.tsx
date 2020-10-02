@@ -1,4 +1,4 @@
-import { Stack, Heading } from "@chakra-ui/core";
+import { Stack, Heading, Text } from "@chakra-ui/core";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import HelpCard from "../components/HelpCard";
@@ -7,7 +7,7 @@ const help: React.FC = () => {
 	return (
 		<>
 			<Navbar />
-			<Main align="center" spacing={8}>
+			<Main align="center" spacing={8} fontSize="xl">
 				<Heading
 					as="h1"
 					textAlign="center"
@@ -19,11 +19,11 @@ const help: React.FC = () => {
 					<Heading fontSize={["2xl", "3xl", "4xl", "5xl"]}>
 						Telefonní linky
 					</Heading>
-					{/* <HelpCard
+					<HelpCard
 						title="Linka první psychické pomoci"
 						numbers={["116 123"]}
 						open={["nonstop"]}
-					/> 
+					/>
 					<HelpCard
 						title="Pražská linka důvěry"
 						numbers={["222 580 697"]}
@@ -38,7 +38,7 @@ const help: React.FC = () => {
 						title="Linka naděje Brno"
 						numbers={["547 212 333"]}
 						open={["nonstop"]}
-					/>*/}
+					/>
 					<HelpCard
 						title="Linka důvěry Ostrava"
 						numbers={["737 267 939", "596 618 908"]}
@@ -93,10 +93,14 @@ const help: React.FC = () => {
 						open={[]}
 					/>
 				</Stack>
-				<Stack as="section">
+				<Stack as="section" textAlign="center">
 					<Heading fontSize={["2xl", "3xl", "4xl", "5xl"]}>
 						Krizová centra
 					</Heading>
+					<Text>Krizové centrum RIAPS Praha</Text>
+					<Text>Centrum krizové intervence PN v Bohnicích</Text>
+					<Text>Krizové centrum Psychiatrické kliniky FN Brno</Text>
+					<Text>Krizové centrum Ostrava, o.s.</Text>
 				</Stack>
 			</Main>
 		</>

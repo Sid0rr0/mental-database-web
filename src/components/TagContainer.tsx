@@ -8,14 +8,14 @@ const TagContainer: React.FC = ({}) => {
 	return (
 		<Box
 			w="100%"
-			position="fixed"
+			/* position="fixed"
 			left="0"
-			top={["3em", "3em", "4em", "5em"]}
+			top={["3em", "3em", "4em", "5em"]} */
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
 			zIndex="3"
-			bgColor="yellow"
+			bgColor="none"
 			flexWrap="wrap"
 			pb={1}
 		>
@@ -25,8 +25,8 @@ const TagContainer: React.FC = ({}) => {
 					my={1}
 					px={2}
 					key={tag}
-					bgColor="#000"
-					color="#FFF"
+					bgColor="#FFF"
+					color="#000"
 					rounded="1em"
 					fontSize="sm"
 					textAlign="center"

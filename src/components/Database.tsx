@@ -1,5 +1,6 @@
 import CollapseBubble from "./CollapseBubble";
-import { Heading, Text, Box } from "@chakra-ui/core";
+import TagContainer from "../components/TagContainer";
+import { Heading, Text, Box, Button } from "@chakra-ui/core";
 
 const Database: React.FC = () => {
 	return (
@@ -11,6 +12,7 @@ const Database: React.FC = () => {
 				</Text>
 				<Text textAlign="center">Nemusíte vyplňovat každou sekci.</Text>
 			</Box>
+			<TagContainer />
 			<CollapseBubble
 				title="Odborník"
 				tags={[
@@ -158,6 +160,16 @@ const Database: React.FC = () => {
 				title="Typ platby"
 				tags={["Hotově", "Převodem", "Kartou"]}
 			/>
+			<Button
+				rounded={["1rem", "2rem", "3rem", "4rem"]}
+				w={["21rem", "22rem", "23rem", "24rem"]}
+				color="#FFF"
+				bgColor="#00F"
+				_active={{ bgColor: "#00F" }}
+				_focus={{ bgColor: "#00F" }}
+			>
+				Zobrazit výsledky
+			</Button>
 		</>
 	);
 };

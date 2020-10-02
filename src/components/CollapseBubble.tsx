@@ -61,7 +61,6 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								defaultValue={ageSlider}
 								min={15}
 								max={99}
-								color="tomato"
 								w="80%"
 								my={5}
 								onChange={newAge => setAgeSlider(newAge)}
@@ -70,10 +69,11 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								<SliderFilledTrack h={2} />
 								<SliderThumb
 									_focus={{ outline: "0" }}
-									w={30}
-									h={30}
+									w={39}
+									h={4}
+									bgColor="#000"
 								>
-									<Box>{ageSlider}</Box>
+									<Box mb={-10}>{ageSlider}</Box>
 								</SliderThumb>
 							</Slider>
 						) : (
@@ -83,7 +83,6 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								min={0}
 								max={2000}
 								step={100}
-								color="tomato"
 								w="80%"
 								my={5}
 								onChange={newPrice => setPriceSlider(newPrice)}
@@ -93,9 +92,10 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								<SliderThumb
 									_focus={{ outline: "0" }}
 									w={39}
-									h={30}
+									h={4}
+									bgColor="#000"
 								>
-									<Box>{priceSlider}</Box>
+									<Box mb={-10}>{priceSlider}</Box>
 								</SliderThumb>
 							</Slider>
 						)

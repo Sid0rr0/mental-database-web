@@ -5,13 +5,12 @@ import BigButton from "../components/BigButton";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import Advices from "../components/Advices";
-import TagContainer from "../components/TagContainer";
 
 const index: React.FC = () => {
 	return (
 		<>
 			<Navbar />
-			<TagContainer />
+
 			<Main px={4} align="center" spacing="3rem" fontSize="xl">
 				<Heading
 					as="h1"

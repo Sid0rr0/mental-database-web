@@ -1,6 +1,5 @@
 import {
 	Box,
-	Link as ChakraLink,
 	Menu,
 	MenuButton,
 	MenuItem,

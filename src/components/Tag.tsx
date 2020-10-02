@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTags } from "../utils/TagContext";
 
 interface TagProps {
@@ -8,9 +8,9 @@ interface TagProps {
 const Tag: React.FC<TagProps> = ({ name }) => {
 	const [bgColor, setBgColor] = useState("");
 	const tagsContext = useTags();
+	const tags = tagsContext?.tags;
 
 	const handleSelect = () => {
-		const tags = tagsContext?.tags;
 		if (tags?.includes(name)) {
 			tagsContext?.deleteTag(name);
 			setBgColor("");
@@ -20,11 +20,19 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 		}
 	};
 
+	useEffect(() => {
+		if (tags?.includes(name)) {
+			setBgColor("#00F");
+		} else {
+			setBgColor("");
+		}
+	});
+
 	return (
 		<Box
-			border="1px"
+			as="button"
 			rounded="20px"
-			borderColor="#000"
+			border={bgColor === "" ? "1px solid #000" : ""}
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
@@ -33,6 +41,8 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 			py={1}
 			m={2}
 			_hover={{ boxShadow: "2px 2px 8px 4px rgba(0,0,0,0.75)" }}
+			_active={{ outline: "none" }}
+			_focus={{ outline: "none" }}
 			cursor="pointer"
 			onClick={handleSelect}
 			bgColor={bgColor}

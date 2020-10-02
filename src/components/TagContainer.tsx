@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/core";
+import { Box, Button } from "@chakra-ui/core";
 import { useTags } from "../utils/TagContext";
 
 const TagContainer: React.FC = ({}) => {
@@ -7,7 +7,7 @@ const TagContainer: React.FC = ({}) => {
 
 	return (
 		<Box
-			w="100%"
+			w={["21rem", "22rem", "23rem", "24rem"]}
 			/* position="fixed"
 			left="0"
 			top={["3em", "3em", "4em", "5em"]} */
@@ -30,8 +30,17 @@ const TagContainer: React.FC = ({}) => {
 					rounded="1em"
 					fontSize="sm"
 					textAlign="center"
+					display="flex"
 				>
 					{tag}
+					<Box
+						as="button"
+						ml={1}
+						onClick={() => tagsContext?.deleteTag(tag)}
+						cursor="pointer"
+					>
+						x
+					</Box>
 				</Box>
 			))}
 		</Box>

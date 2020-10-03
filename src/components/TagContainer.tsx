@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/core";
 import { useTags } from "../utils/TagContext";
 
 const TagContainer: React.FC = ({}) => {
@@ -38,8 +38,30 @@ const TagContainer: React.FC = ({}) => {
 						ml={1}
 						onClick={() => tagsContext?.deleteTag(tag)}
 						cursor="pointer"
+						w={2}
 					>
-						x
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 34.14 85.6"
+						>
+							<title>delete tag</title>
+							<path
+								d="M34.48,8.37l13.6,39.08c.82,2.3,2.07,2.27,2.89,0L65.67,8.37"
+								transform="translate(-33.06 -7.84)"
+								fill="none"
+								stroke="blue"
+								strokeMiterlimit="10"
+								strokeWidth="3"
+							/>
+							<path
+								d="M34.61,92.91,48.22,53.82c.81-2.3,2.06-2.26,2.89,0L65.8,92.91"
+								transform="translate(-33.06 -7.84)"
+								fill="none"
+								stroke="blue"
+								strokeMiterlimit="10"
+								strokeWidth="3"
+							/>
+						</svg>
 					</Box>
 				</Box>
 			))}

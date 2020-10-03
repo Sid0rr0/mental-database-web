@@ -7,7 +7,7 @@ interface QuestionaireResultsProps {
 const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
 	diseases,
 }) => {
-	const uniqueDiseases = [... new Set(diseases);]
+	const uniqueDiseases = [...new Set(diseases)];
 	return (
 		<>
 			<Heading>Orientační výsledky dotazníku</Heading>

@@ -18,12 +18,13 @@ const Navbar: React.FC = ({}) => {
 			bg="#F9F09B"
 			display="flex"
 			justifyContent="space-between"
+			alignContent="center"
 			position="fixed"
 			top="0"
 			left="0"
 			zIndex="69"
-			pb={1}
 			as="nav"
+			mb={-2}
 		>
 			<Heading
 				fontWeight="normal"
@@ -52,15 +53,31 @@ const Navbar: React.FC = ({}) => {
 							_focus={{ bg: "none" }}
 						>
 							{isOpen ? (
-								<svg viewBox="0 0 96 96">
-									<polygon
-										fill="black"
-										points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 85.59 34.14"
+								>
+									<title>delete menu</title>
+									<path
+										d="M7.73,34.34,46.81,48c2.31.81,2.27,2.06,0,2.88L7.73,65.53"
+										transform="translate(-7.2 -32.92)"
+										fill="none"
+										stroke="blue"
+										stroke-miterlimit="10"
+										stroke-width="3"
+									/>
+									<path
+										d="M92.27,34.47,53.19,48.08c-2.31.81-2.27,2.06,0,2.89L92.27,65.66"
+										transform="translate(-7.2 -32.92)"
+										fill="none"
+										stroke="blue"
+										stroke-miterlimit="10"
+										stroke-width="3"
 									/>
 								</svg>
 							) : (
 								<svg
-									fill="black"
+									fill="blue"
 									viewBox="0 0 20 20"
 									xmlns="http://www.w3.org/2000/svg"
 								>
@@ -78,6 +95,8 @@ const Navbar: React.FC = ({}) => {
 							position="fixed"
 							left={0}
 							background="yellow"
+							/* offset in parent not working */
+							mt={-2}
 						>
 							<Stack
 								spacing={2}
@@ -94,7 +113,7 @@ const Navbar: React.FC = ({}) => {
 									</Link>
 								</MenuItem>
 								<MenuItem justifyContent="center">
-									<Link href="/questionaire">
+									<Link href="/crossroad">
 										<a>Dotazník</a>
 									</Link>
 								</MenuItem>

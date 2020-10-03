@@ -1,0 +1,349 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"title": {
+				"en": "Antisocial personality disorder",
+				"cz": "Disociální porucha osobnosti"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 2,
+			"title": {
+				"en": "Avoidant  personality disorder",
+				"cz": "Anxiózní (vyhýbavá) osobnost"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 3,
+			"title": {
+				"en": "Bipolar disorder",
+				"cz": "Bipolární afektivní porucha"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 4,
+			"title": {
+				"en": "Borderline personality disorder",
+				"cz": "Emočně nestabilní porucha osobnosti"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 5,
+			"title": {
+				"en": "Dissociative identity disorder",
+				"cz": "Disociativní (konverzní) poruchy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 6,
+			"title": {
+				"en": "Eating disorder",
+				"cz": "Poruchy příjmu potravy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 7,
+			"title": {
+				"en": "Generalized anxiety disorder",
+				"cz": "Generalizovaná úzkostná porucha"
+			},
+			"body": {
+				"en": "",
+				"cz": "Základní vlastností je generalizovaná a přetrvávající úzkost‚ která není vztažena na žádné zvláštní zevní okolnosti‚ ani se nevyskytuje převážně v závislosti na nich (tj. je „volně těkající”). Hlavní příznaky jsou různé. Většinou jde o pocity nervozity‚ třes‚ svalové napětí‚ pocení‚ světloplachost‚ palpitace‚ závratě a tlak v epigastriu. Často jsou přítomny strach a jiné obavy‚ že pacient sám nebo jeho příbuzní brzy onemocní nebo budou mít nehodu."
+			},
+			"tags": {
+				"en": [],
+				"cz": [
+					"Volná místa",
+					"Generalizovaná úzkostná porucha",
+					"Úzkost",
+					"Nervozita",
+					"Třes",
+					"Svalové napětí",
+					"Pocení",
+					"Světloplachost ",
+					"Závratě",
+					"Tlak v břiše",
+					"Strach"
+				]
+			}
+		},
+		{
+			"id": 8,
+			"title": {
+				"en": "Impulse control disorder",
+				"cz": "Nutkavé a impulzivní poruchy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 9,
+			"title": {
+				"en": "Major depressive disorder",
+				"cz": "Poruchy nálady (depresivní fáze)"
+			},
+			"body": {
+				"en": "",
+				"cz": "Typická fáze může probíhat v lehké‚ střední nebo těžké formě. Nemocný má zhoršenou náladu‚ sníženou energii a aktivitu. Je narušen smysl pro zábavu‚ osobní zájmy a schopnost koncentrace. Po minimální námaze se objevuje únava. Je narušen spánek a je zhoršená chuť k jídlu. Sebehodnocení a sebedůvěra jsou zhoršeny‚ pocity viny a beznaděje jsou přítomny i u lehkých případů. Zhoršená nálada se v časovém průběhu příliš nemění‚ nereaguje na okolní změny. Může být provázena tzv. „somatickými” symptomy‚ jako je ztráta zájmů a pocitů uspokojení. Ranní probouzení je o několik hodin dříve před obvyklou hodinou. Deprese se horší nejvíce ráno. Je zřetelná psychomotorická retardace a agitovanost. Je ztráta chuti k jídlu‚ hubnutí a ztráta libida. Podle počtu a tíže příznaků je možno fázi hodnotit jako mírnou‚ střední nebo těžkou."
+			},
+			"tags": {
+				"en": [],
+				"cz": [
+					"Volná místa",
+					"Poruchy nálady (depresivní fáze)",
+					"Zhoršená nálada",
+					"Snížené sebevědomí",
+					"Nechutenství",
+					"Narušený spánek",
+					"Snížená koncentrace",
+					"Únava",
+					"Pocit beznaděje",
+					"Ztráta zájmu o zábavu a zájmy"
+				]
+			}
+		},
+		{
+			"id": 10,
+			"title": {
+				"en": "Mania",
+				"cz": "Poruchy nálady (manická fáze)"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 11,
+			"title": {
+				"en": "Obsessive-compulsive disorder",
+				"cz": "Obsedantně-nutkavá porucha"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 12,
+			"title": {
+				"en": "Panic disorder",
+				"cz": "Panická porucha"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 13,
+			"title": {
+				"en": "Persistent depressive disorder",
+				"cz": "Dystimie"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 14,
+			"title": {
+				"en": "Posttraumatic stress disorder",
+				"cz": "Posttraumatická stresová porucha"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 15,
+			"title": {
+				"en": "Psychosis",
+				"cz": "Poruchy s trvalými bludy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 16,
+			"title": {
+				"en": "Sexual disorder",
+				"cz": "Sexuální poruchy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 17,
+			"title": {
+				"en": "Simple phobia",
+				"cz": "Specifické (izolované) fobie"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 18,
+			"title": {
+				"en": "Sleep disorder",
+				"cz": "Neorganické poruchy spánku"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 19,
+			"title": {
+				"en": "Social phobia",
+				"cz": "Sociální fóbie"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 20,
+			"title": {
+				"en": "Somatic symptom disorder",
+				"cz": "Somatoformní  poruchy"
+			},
+			"body": {
+				"en": "",
+				"cz": ""
+			},
+			"tags": {
+				"en": [],
+				"cz": []
+			}
+		},
+		{
+			"id": 21,
+			"title": {
+				"en": "Substance abuse disorder",
+				"cz": "Poruchy duševní a poruchy chování způsobené užíváním psychoaktivních látek"
+			},
+			"body": {
+				"en": "",
+				"cz": "Soubor behaviorálních‚ kognitivních a fyziologických stavů‚ který se vyvíjí po opakovaném užití substance a který typicky zahrnuje silné přání užít drogu‚ porušené ovládání při jejím užívání‚ přetrvávající užívání této drogy i přes škodlivé následky‚ priorita v užívání drogy před ostatními aktivitami a závazky‚ zvýšená tolerance pro drogu a někdy somatický odvykací stav. Syndrom závislosti může být přítomen pro specifickou psychoaktivní substanci (např. tabák‚ alkohol nebo diazepam)‚ pro skupinu látek (např. opioidy) nebo pro širší rozpětí farmakologicky rozličných psychoaktivních substancí."
+			},
+			"tags": {
+				"en": [],
+				"cz": [
+					"Volná místa",
+					"Poruchy duševní a poruchy chování způsobené užíváním psychoaktivních látek",
+					"Silné přání užít drogu",
+					"Porušené ovládání při užívání drogy",
+					"Užívání drogy i přes škodlivé následky",
+					"Priorita v užívání drogy před ostatními aktivitami a závazky"
+				]
+			}
+		}
+	]
+}

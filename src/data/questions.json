@@ -1,0 +1,382 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"en": "Over the past year, I’ve had a lot of trouble sleeping because of all my worries.",
+			"cz": "Za poslední rok mám problémy se spaním kvůli mým obavám.",
+			"disease": 7
+		},
+		{
+			"id": 2,
+			"en": "For more than six months now, I've panicked or have gotten very nervous when I’ve seen certain things.",
+			"cz": "Déle než šest měsíců panikařím nebo jsem velmi nervózní, když vidím určité věci.",
+			"disease": 17
+		},
+		{
+			"id": 3,
+			"en": "For a long time now, I've known that there's something wrong with my body even though doctors tell me I’m fine.",
+			"cz": "Delší dobu vím, že se s mým tělem je něco špatného, i když mi lékaři říkají, že jsem v pořádku.",
+			"disease": 20
+		},
+		{
+			"id": 4,
+			"en": "Since I was young, I've often avoided saying or doing things that might make people reject me.",
+			"cz": "Od mládí se často vyhýbám tomu, abych říkal/a nebo dělal/a věci, které by mohly vést k tomu, že mě lidé odmítnou.",
+			"disease": 2
+		},
+		{
+			"id": 5,
+			"en": "For more than six months now, I’ve been unable to control how nervous I get around other people.",
+			"cz": "Déle než šest měsíců nejsem schopen/schopna ovládat svojí nervozitu mezi ostatními lidmi.",
+			"disease": 19
+		},
+		{
+			"id": 6,
+			"en": "For more than a month now, I've been extremely tired during the day, even though I slept pretty well the night before.",
+			"cz": "Po dobu delší než měsíc jsem extrémně unavený/á, i když jsem spal/a dobře předchozí noc.",
+			"disease": 18
+		},
+		{
+			"id": 7,
+			"en": "For more than six months now, I’ve been very afraid of something, and that’s caused problems for me.",
+			"cz": "Déle než měsíc se něčeho bojím a způsobuje mi to problémy.",
+			"disease": 17
+		},
+		{
+			"id": 8,
+			"en": "I sometimes feel like my mind is possessed by another person or creature.",
+			"cz": "Někdy mám pocit, že moje mysl je ovládaná jinou osobou nebo bytostí.",
+			"disease": 5
+		},
+		{
+			"id": 9,
+			"en": "Ever since I was young, morals or the law have never stopped me from getting what I want.",
+			"cz": "Od mládí mě morálka nebo zákony nikdy nezastavily před tím, co chci.",
+			"disease": 1
+		},
+		{
+			"id": 10,
+			"en": "For more than a month now, I've awakened feeling more tired than I was when I went to sleep.",
+			"cz": "Déle než měsíc se probouzím s pocitem mnohem větší únavy, než jsem šel/šla spát.",
+			"disease": 18
+		},
+		{
+			"id": 11,
+			"en": "Ever since I was young, I've always gotten in fights and caused trouble.",
+			"cz": "Od mládí se dostávám do rvaček a způsobuji problémy.",
+			"disease": 1
+		},
+		{
+			"id": 12,
+			"en": "For most of my life, I've often had sudden urges to do things that make me feel bad or guilty later.",
+			"cz": "Většinu mého života mám nutkání dělat věci, ze kterých mám špatný pocit nebo cítím později vinu. ",
+			"disease": 8
+		},
+		{
+			"id": 13,
+			"en": "For more than a week now, I’ve been taking huge risks without thinking about what might go wrong.",
+			"cz": "Déle než týden dělám riskantní věci bez přemýšlení o jejich možných negativních následcích.",
+			"disease": 10
+		},
+		{
+			"id": 14,
+			"en": "For more than six months now, I've been scared and nervous in public, and this is a big problem in my life.",
+			"cz": "Déle než šest měsíců se bojím a jsem nervózní ve společnosti, a to mi způsobuje velké problémy v mém životě.",
+			"disease": 19
+		},
+		{
+			"id": 15,
+			"en": "For more than two weeks now, I’ve been feeling extremely down and miserable.",
+			"cz": "Po dobu delší než dva týdny se cítím extrémně smutně a nešťastně.",
+			"disease": 9
+		},
+		{
+			"id": 16,
+			"en": "For most of my life, I've had low self esteem and have been afraid of people rejecting or leaving me.",
+			"cz": "Většinu mého života mám nízké sebevědomí a bojím se, že mě lidé odmítnou nebo opustí.",
+			"disease": 4
+		},
+		{
+			"id": 17,
+			"en": "Since I was young, my need to repeat certain thoughts or actions over and over again has caused problems for me.",
+			"cz": "Od mládí má potřeba dokola si opakovat určité myšlenky nebo činnosti mi způsobuje problémy.",
+			"disease": 11
+		},
+		{
+			"id": 18,
+			"en": "Sometimes I relive a terrible event that happened to me a long time ago.",
+			"cz": "Někdy se mi znova vrací ve vzpomínkách hrozná událost, která mi stala v minulosti.",
+			"disease": 14
+		},
+		{
+			"id": 19,
+			"en": "For at least a month, I have sometimes lost control over the movement of parts of my body.",
+			"cz": "Už skoro měsíc občas ztratím kontrolu nad pohybem částí mého těla.",
+			"disease": 15
+		},
+		{
+			"id": 20,
+			"en": "Over the past year, I’ve used more and more alcohol or drugs so I can deal with my problems better.",
+			"cz": "Přes rok užívám více a více alkohol nebo drogy, abych mohl/a řešit lépe své problémy.",
+			"disease": 21
+		},
+		{
+			"id": 21,
+			"en": "For a long time now, it’s been hard for me to get turned on or orgasm, and this has caused problems in my personal life.",
+			"cz": "Už delší dobu je pro mě těžké se vzrušit nebo mít orgasmus, což způsobuje problémy v mém osobním životě.",
+			"disease": 16
+		},
+		{
+			"id": 22,
+			"en": "For more than two weeks now, it’s been hard for me to feel happy doing things I used to enjoy.",
+			"cz": "Déle než dva týdny nepociťuji zálibu v činnostech, které mě bavili.",
+			"disease": 9
+		},
+		{
+			"id": 23,
+			"en": "For a long time now, I've strongly believed that something’s wrong with the way I look.",
+			"cz": "Delší dobu pevně věřím, že je něco v nepořádku s mým vzhledem.",
+			"disease": 20
+		},
+		{
+			"id": 24,
+			"en": "Over the past year, for no reason at all my mood sometimes changed quickly from very up to very down or vice versa.",
+			"cz": "Za poslední rok se mi občas bezdůvodně změnila nálada z velmi dobré na velmi špatnou a naopak.",
+			"disease": 3
+		},
+		{
+			"id": 25,
+			"en": "Sometimes there are large gaps in my memory of recent events.",
+			"cz": "Někdy si nepamatuji velkou část vzpomínek z nedávných událostí.",
+			"disease": 5
+		},
+		{
+			"id": 26,
+			"en": "For at least a month, I’ve been seeing things or hearing voices which may not be real.",
+			"cz": "Déle než měsíc vidím věci nebo slyším hlasy, které nemusí být skutečné.",
+			"disease": 15
+		},
+		{
+			"id": 27,
+			"en": "Every week for several months now, I’ve eaten a lot of food all at once and then made myself throw up.",
+			"cz": "Každý týden po několik měsíců jím hodně jídla a pak se přinutím ho vyzvracet.",
+			"disease": 6
+		},
+		{
+			"id": 28,
+			"en": "For more than a few months now, I've been harming myself on purpose or have been doing risky things without thinking.",
+			"cz": "Po více než několik měsíců se cíleně sebepoškozuji nebo dělám riskantní věci bez myšlení.",
+			"disease": 4
+		},
+		{
+			"id": 29,
+			"en": "Over the past year, my drug or alcohol use has caused problems in my job or relationships.",
+			"cz": "Za poslední rok mi moje užívání alkoholu nebo drog způsobilo problémy v práci nebo ve vztahu.",
+			"disease": 21
+		},
+		{
+			"id": 30,
+			"en": "Over the past year, my worries have gotten so big that my body is often restless, tense, or tired.",
+			"cz": "Za poslední rok se moje obavy tak zvýšily, že moje tělo je často neklidné, napjaté nebo unavené.",
+			"disease": 9
+		},
+		{
+			"id": 31,
+			"en": "I still think much too often about a terrible thing that happened to me a long time ago.",
+			"cz": "Stále příliš často přemýšlím o hrozné věci, která se mi stala v minulosti",
+			"disease": 14
+		},
+		{
+			"id": 32,
+			"en": "I sometimes feel like I have two or more different personalities in me.",
+			"cz": "Občas mám pocit, že mám v sobě dvě nebo více odlišných osobností.",
+			"disease": 5
+		},
+		{
+			"id": 33,
+			"en": "Since I was young, I've been unable to stop bad thoughts from occurring over and over again in my mind.",
+			"cz": "Od mládí nejsem schopný/á zastavit špatné myšlenky, které se mi znovu a znovu objevují v mysli.",
+			"disease": 11
+		},
+		{
+			"id": 34,
+			"en": "Over the past year, my moods changed so fast that people close to me got worried.",
+			"cz": "Za poslední rok se mi moje nálady změnily tak rychle, že se blízcí lidé kolem mě začali o mě bát.",
+			"disease": 3
+		},
+		{
+			"id": 35,
+			"en": "For more than three months now, I've been starving myself using extreme measures.",
+			"cz": "Déle než tři měsíce za použití extrémních kroků hladovím. ",
+			"disease": 6
+		},
+		{
+			"id": 36,
+			"en": "Ever since I was young, I've strongly believed I'm not good enough for many things in life.",
+			"cz": "Od mládí silně věřím, že nejsem dost dobrý/á, abych si zasloužil/a hodně věcí v životě.",
+			"disease": 2
+		},
+		{
+			"id": 37,
+			"en": "For most of my life, it’s been hard for me to control my impulses.",
+			"cz": "Většinu mého života je pro mě náročné ovládat moje nutkání.",
+			"disease": 8
+		},
+		{
+			"id": 38,
+			"en": "For more than two years now, my depression has caused me to eat or sleep abnormally almost every day.",
+			"cz": "Už více jak dva roky mi moje deprese způsobuje, že jím nebo spím abnormálně skoro každý den. ",
+			"disease": 13
+		},
+		{
+			"id": 39,
+			"en": "For more than a week now, I’ve slept very little, and it hasn’t affected me.",
+			"cz": "Déle než týden spím málo a nemá to na mě vliv.",
+			"disease": 10
+		},
+		{
+			"id": 40,
+			"en": "For more than two years now, my frequent negative moods have made it hard for me to focus or make good decisions.",
+			"cz": "Déle než dva roky se nemohu soustředit nebo dělat dobrá rozhodnutí kvůli mým častým negativním náladám.",
+			"disease": 13
+		},
+		{
+			"id": 41,
+			"en": "Over the past year, I've had extreme mood swings that I don't think are normal.",
+			"cz": "Za poslední rok jsem měl/a extrémní změny nálady, o kterých si myslím, že nejsou normální.",
+			"disease": 3
+		},
+		{
+			"id": 42,
+			"en": "Ever since I was young, I've never cared if my actions hurt other people.",
+			"cz": "Od mládí mi bylo jedno, jestli moje jednání zraňuje druhé lidi.",
+			"disease": 1
+		},
+		{
+			"id": 43,
+			"en": "For more than a month now, at times I've felt extreme fear or panic, and I worry a lot about when this will happen again.",
+			"cz": "Déle než měsíc cítím někdy extrémní strach nebo paniku a hodně se bojím, že se mi to znova stane.",
+			"disease": 12
+		},
+		{
+			"id": 44,
+			"en": "For a long time now, I haven't felt sexual, and this has caused problems in my personal life.",
+			"cz": "Už dlouhou dobu se necítím sexuálně, a to způsobuje problémy v mém osobním živote.",
+			"disease": 16
+		},
+		{
+			"id": 45,
+			"en": "For more than six months now, I’ve been avoiding something I’m very afraid of.",
+			"cz": "Déle než šest měsíců se něčemu vyhýbám a mám z toho velký strach.",
+			"disease": 17
+		},
+		{
+			"id": 46,
+			"en": "I'm very scared of things that remind me of something awful that happened to me a long time ago.",
+			"cz": "Velmi se bojím věcí, které mi připomínají něco strašného, co se mi stalo v minulosti.",
+			"disease": 14
+		},
+		{
+			"id": 47,
+			"en": "For at least a month, my thoughts and speech have often been chaotic and confusing.",
+			"cz": "Už aspoň měsíc jsou moje myšlenky a řeč chaotické a matoucí.",
+			"disease": 15
+		},
+		{
+			"id": 48,
+			"en": "Over the past year, I’ve been unable to stop worrying about things no matter how hard I try.",
+			"cz": "Za poslední rok jsem nebyl/a schopna se přestat strachovat o věci, i přestože se o to velmi snažím.",
+			"disease": 7
+		},
+		{
+			"id": 49,
+			"en": "For months or years now, I've been obsessed with eating as little food as possible so I don't gain weight.",
+			"cz": "Měsíce nebo roky jsem posedlý/á tím, abych jedla co nejméně co mohu, abych nenabrala váhu.",
+			"disease": 6
+		},
+		{
+			"id": 50,
+			"en": "For more than six months now, I've been sexually attracted to weird things or situations, and it causes me a lot of stress.",
+			"cz": "Déle než šest měsíců jsem sexuálně přitahován/a divnými věcmi nebo situacemi a to mi způsobuje hodně stresu.",
+			"disease": 16
+		},
+		{
+			"id": 51,
+			"en": "For more than a month now, at times I've felt extreme fear and panic and I don’t know why.",
+			"cz": "Už více než měsíc mám extrémní strach nebo pociťuji paniku a nevím proč. ",
+			"disease": 12
+		},
+		{
+			"id": 52,
+			"en": "For more than a week now, I’ve been feeling extremely important, almost like a god.",
+			"cz": "Déle než týden se cítím extrémně důležitě, skoro jako bůh.",
+			"disease": 10
+		},
+		{
+			"id": 53,
+			"en": "Ever since I was young, I haven't been close to anyone because I’m afraid of being judged or not liked.",
+			"cz": "Od mládí jsem si nebyl/a blízký/á s nikým, protože se bojím, že mě někdo bude soudit nebo mě nebude mít rád. ",
+			"disease": 1
+		},
+		{
+			"id": 54,
+			"en": "For more than two weeks now, I’ve been feeling hopeless, like there’s no point in living.",
+			"cz": "Více než dva týdny se cítím zoufale, jako kdyby život neměl žádný smysl.",
+			"disease": 9
+		},
+		{
+			"id": 55,
+			"en": "For most of my life, my extreme mood swings have caused problems in my relationships with other people.",
+			"cz": "Většinu mého života mi mé extrémní změny nálad způsobují problémy ve vztazích.",
+			"disease": 4
+		},
+		{
+			"id": 56,
+			"en": "For more than six months now, I’ve been scared of making a fool of myself in public.",
+			"cz": "Už déle než šest měsíců  se bojím, abych ze sebe na veřejnosti neuděl/a hlupáka.",
+			"disease": 19
+		},
+		{
+			"id": 57,
+			"en": "Over the past year, I’ve tried to drink less, smoke less, or take less drugs, but have failed to do so.",
+			"cz": "Za poslední rok se snažím pít méně alkoholu, méně kouřit tabák nebo užívat méně drog, ale nepodařilo se mi to.  ",
+			"disease": 21
+		},
+		{
+			"id": 58,
+			"en": "For more than a month now, I've frequently had trouble going to sleep or staying asleep.",
+			"cz": "Déle než měsíc mám časté problémy s usínáním nebo spánkem.",
+			"disease": 18
+		},
+		{
+			"id": 59,
+			"en": "For a long time now, I've never known why there have been so many problems or pains in my body, but I know they're there. ",
+			"cz": "Po dlouhou dobu jsem nikdy nezjistil/a, proč mám tolik tělesných problémů a bolesti, ale vím, že tam jsou.",
+			"disease": 20
+		},
+		{
+			"id": 60,
+			"en": "For most of my life, I've done things without thinking about the consequences, and that’s caused lots of problems for me.",
+			"cz": "Většinu mého života dělám věci bez promyšlení jejich následků a způsobuje mi to hodně problémů.",
+			"disease": 8
+		},
+		{
+			"id": 61,
+			"en": "Since I was young, I've had to do or think certain things over and over again to keep myself calm.",
+			"cz": "Od mládí opakovaně dělám nebo myslím na určité věci, abych se uklidnil/a.",
+			"disease": 11
+		},
+		{
+			"id": 62,
+			"en": "For more than two years now, I’ve been feeling down and negative almost every day.",
+			"cz": "Déle než dva roky se cítím sklesle a pesimisticky skoro každý den.",
+			"disease": 13
+		},
+		{
+			"id": 63,
+			"en": "For more than a month now, I’ve avoided certain places because I panic a lot when I’m near them.",
+			"cz": "Déle než měsíc se vyhýbám určitým místem, protože hodně panikařím, když jsem jim blízko.",
+			"disease": 12
+		}
+	]
+}

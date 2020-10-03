@@ -37,10 +37,8 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 			alignItems="center"
 			justifyContent="center"
 			textAlign="center"
-			px={2}
-			py={1}
-			m={2}
-			_hover={{ boxShadow: "2px 2px 8px 4px rgba(0,0,0,0.75)" }}
+			p={1}
+			m={1}
 			_active={{ outline: "none" }}
 			_focus={{ outline: "none" }}
 			cursor="pointer"

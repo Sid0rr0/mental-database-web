@@ -132,7 +132,7 @@ const questionaire: React.FC = () => {
 											d="M72.46,6.53,36.89,44.12a5.67,5.67,0,0,0-.06,7.76L72.46,90.4"
 											transform="translate(-33.83 -5.5)"
 											fill="none"
-											stroke="blue"
+											stroke="black"
 											strokeMiterlimit="10"
 											strokeWidth="3"
 										/>
@@ -154,7 +154,7 @@ const questionaire: React.FC = () => {
 											d="M34.44,8.69,70,46.28A5.68,5.68,0,0,1,70.07,54L34.44,92.56"
 											transform="translate(-33.34 -7.66)"
 											fill="none"
-											stroke="blue"
+											stroke="black"
 											strokeMiterlimit="10"
 											strokeWidth="3"
 										/>

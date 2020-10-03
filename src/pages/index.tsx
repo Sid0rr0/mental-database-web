@@ -11,11 +11,12 @@ const index: React.FC = () => {
 		<>
 			<Navbar />
 
-			<Main px={4} align="center" spacing="3rem" fontSize="xl">
+			<Main px={4} align="center" spacing="2rem" fontSize="xl">
 				<Heading
 					as="h1"
 					textAlign="center"
 					fontSize={["3xl", "4xl", "5xl", "6xl"]}
+					fontWeight="normal"
 				>
 					Hledáte duševní pomoc?
 				</Heading>
@@ -23,7 +24,7 @@ const index: React.FC = () => {
 					<BigButton
 						text="Tuším, co mě trápí"
 						link="/"
-						w={["10.5em", "11em", "11.5em", "12em"]}
+						w={["12em", "12.5em", "13em", "13.5em"]}
 					/>
 					<Text mt={1} fontSize={["sm", "md", "md", "md"]}>
 						Chci rovnou do databáze
@@ -31,7 +32,7 @@ const index: React.FC = () => {
 					<BigButton
 						text="Netuším, co mě trápí"
 						link="/crossroad"
-						w={["10.5em", "11em", "11.5em", "12em"]}
+						w={["12em", "12.5em", "13em", "13.5em"]}
 					/>
 					<Text mt={1} fontSize={["sm", "md", "md", "md"]}>
 						Chci si projít orientační dotazník

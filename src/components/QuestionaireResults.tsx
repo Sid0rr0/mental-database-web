@@ -7,6 +7,7 @@ interface QuestionaireResultsProps {
 const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
 	diseases,
 }) => {
+	const uniqueDiseases = [... new Set(diseases);]
 	return (
 		<>
 			<Heading>Orientační výsledky dotazníku</Heading>
@@ -19,7 +20,7 @@ const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
 				Podle vámi vyplněného dotazníku máte několik znaků této poruchy:
 			</Text>
 
-			{diseases.map(disease => (
+			{uniqueDiseases.map(disease => (
 				<Text fontStyle="italic" key={dis.data[disease].title.cz}>
 					{dis.data[disease].title.cz}
 				</Text>
@@ -27,7 +28,7 @@ const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
 
 			<Stack>
 				<Heading fontSize="xl">Vysvětlení poruchy:</Heading>
-				{diseases.map(disease => (
+				{uniqueDiseases.map(disease => (
 					<Stack as="section" key={dis.data[disease].id}>
 						{diseases.length > 1 ? (
 							<Heading as="h3" fontSize="xl">

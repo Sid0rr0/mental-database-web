@@ -49,7 +49,6 @@ const Database: React.FC = () => {
 					"Závratě",
 					"Nervozita",
 					"Osamělost",
-					"našeptávač příznaků",
 				]}
 			/>
 			<CollapseBubble

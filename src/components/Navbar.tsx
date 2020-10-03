@@ -62,22 +62,22 @@ const Navbar: React.FC = ({}) => {
 										d="M7.73,34.34,46.81,48c2.31.81,2.27,2.06,0,2.88L7.73,65.53"
 										transform="translate(-7.2 -32.92)"
 										fill="none"
-										stroke="blue"
-										stroke-miterlimit="10"
-										stroke-width="3"
+										stroke="black"
+										strokeMiterlimit="10"
+										strokeWidth="3"
 									/>
 									<path
 										d="M92.27,34.47,53.19,48.08c-2.31.81-2.27,2.06,0,2.89L92.27,65.66"
 										transform="translate(-7.2 -32.92)"
 										fill="none"
-										stroke="blue"
-										stroke-miterlimit="10"
-										stroke-width="3"
+										stroke="black"
+										strokeMiterlimit="10"
+										strokeWidth="3"
 									/>
 								</svg>
 							) : (
 								<svg
-									fill="blue"
+									fill="black"
 									viewBox="0 0 20 20"
 									xmlns="http://www.w3.org/2000/svg"
 								>

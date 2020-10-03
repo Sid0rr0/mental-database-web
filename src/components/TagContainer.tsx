@@ -49,7 +49,7 @@ const TagContainer: React.FC = ({}) => {
 								d="M34.48,8.37l13.6,39.08c.82,2.3,2.07,2.27,2.89,0L65.67,8.37"
 								transform="translate(-33.06 -7.84)"
 								fill="none"
-								stroke="blue"
+								stroke="black"
 								strokeMiterlimit="10"
 								strokeWidth="3"
 							/>
@@ -57,7 +57,7 @@ const TagContainer: React.FC = ({}) => {
 								d="M34.61,92.91,48.22,53.82c.81-2.3,2.06-2.26,2.89,0L65.8,92.91"
 								transform="translate(-33.06 -7.84)"
 								fill="none"
-								stroke="blue"
+								stroke="black"
 								strokeMiterlimit="10"
 								strokeWidth="3"
 							/>

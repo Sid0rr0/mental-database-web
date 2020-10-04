@@ -37,7 +37,9 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 				bg="#FFF"
 				rounded={["1rem", "2rem", "3rem", "4rem"]}
 				w={["21rem", "22rem", "23rem", "24rem"]}
-				_focus={{ outline: "0" }}
+				_focus={{ outline: "0", bgColor: "#FFF" }}
+				_hover={{ bgColor: "#FFF" }}
+				_active={{ bgColor: "#FFF" }}
 			>
 				{title}
 			</Button>

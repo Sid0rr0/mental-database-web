@@ -13,7 +13,7 @@ const TagContainer: React.FC = ({}) => {
 			top={["3em", "3em", "4em", "5em"]} */
 			display="flex"
 			alignItems="center"
-			justifyContent="center"
+			/* justifyContent="center" */
 			zIndex="3"
 			bgColor="none"
 			flexWrap="wrap"
@@ -28,7 +28,7 @@ const TagContainer: React.FC = ({}) => {
 					bgColor="#FFF"
 					color="#000"
 					rounded="1em"
-					fontSize="sm"
+					fontSize="xs"
 					textAlign="center"
 					display="flex"
 				>

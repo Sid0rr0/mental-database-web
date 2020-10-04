@@ -102,28 +102,43 @@ const Navbar: React.FC = ({}) => {
 								spacing={2}
 								fontSize={["2xl", "3xl", "4xl", "5xl"]}
 							>
-								<MenuItem justifyContent="center">
+								<MenuItem
+									justifyContent="center"
+									_focus={{ bgColor: "none" }}
+								>
 									<Link href="/help">
 										<a>Akutní pomoct</a>
 									</Link>
 								</MenuItem>
-								<MenuItem justifyContent="center">
+								<MenuItem
+									justifyContent="center"
+									_focus={{ bgColor: "none" }}
+								>
 									<Link href="/database">
 										<a>Databáze</a>
 									</Link>
 								</MenuItem>
-								<MenuItem justifyContent="center">
+								<MenuItem
+									justifyContent="center"
+									_focus={{ bgColor: "none" }}
+								>
 									<Link href="/crossroad">
 										<a>Dotazník</a>
 									</Link>
 								</MenuItem>
 
-								<MenuItem justifyContent="center">
+								<MenuItem
+									justifyContent="center"
+									_focus={{ bgColor: "none" }}
+								>
 									<Link href="/information">
 										<a>Informace</a>
 									</Link>
 								</MenuItem>
-								<MenuItem justifyContent="center">
+								<MenuItem
+									justifyContent="center"
+									_focus={{ bgColor: "none" }}
+								>
 									<Link href="/about">
 										<a>O webu</a>
 									</Link>

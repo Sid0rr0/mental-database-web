@@ -9,18 +9,21 @@ import {
 } from "@chakra-ui/core";
 import { useState } from "react";
 import Tag from "./Tag";
+import TextInput from "./TextInput";
 
 interface CollapseBubbleProps {
 	title: string;
 	tags: string[];
 	slider?: boolean;
 	sliderType?: string;
+	textInput?: boolean;
 }
 const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 	title,
 	tags,
 	slider,
 	sliderType,
+	textInput,
 }) => {
 	const [show, setShow] = useState(false);
 	const [ageSlider, setAgeSlider] = useState(25);
@@ -75,7 +78,10 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 									h={4}
 									bgColor="#000"
 								>
-									<Box mb={-10}>{ageSlider}</Box>
+									<Box mb={-10} display="flex">
+										<Box>{ageSlider}</Box>
+										<Box ml={1}>let</Box>
+									</Box>
 								</SliderThumb>
 							</Slider>
 						) : (
@@ -102,7 +108,12 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 							</Slider>
 						)
 					) : (
-						tags.map(tag => <Tag key={tag} name={tag} />)
+						<>
+							{textInput ? <TextInput /> : null}
+							{tags.map(tag => (
+								<Tag key={tag} name={tag} />
+							))}
+						</>
 					)}
 				</Box>
 			</Collapse>

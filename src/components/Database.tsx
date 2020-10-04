@@ -50,6 +50,7 @@ const Database: React.FC = () => {
 					"Nervozita",
 					"Osamělost",
 				]}
+				textInput={true}
 			/>
 			<CollapseBubble
 				title="Duševní porucha"
@@ -81,6 +82,7 @@ const Database: React.FC = () => {
 			<CollapseBubble
 				title="Místo"
 				tags={["Praha", "Brno", "Olomouc", "Karlovy Vary", "Ostrava"]}
+				textInput={true}
 			/>
 			<CollapseBubble
 				title="Pojišťovna"
@@ -160,6 +162,7 @@ const Database: React.FC = () => {
 				title="Typ platby"
 				tags={["Hotově", "Převodem", "Kartou", "Předplatné"]}
 			/>
+			<CollapseBubble title="Jiné kritérium" tags={[]} textInput={true} />
 			<Button
 				rounded={["1rem", "2rem", "3rem", "4rem"]}
 				w={["21rem", "22rem", "23rem", "24rem"]}

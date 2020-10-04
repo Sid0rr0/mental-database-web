@@ -1,16 +1,17 @@
 import { Heading, Text, Stack } from "@chakra-ui/core";
-import * as dis from "../data/diseases.json";
+import * as dis from "../../data/diseases.json";
+import { useTags } from "../../utils/TagContext";
+import TagContainer from "../TagContainer";
 
-interface QuestionaireResultsProps {
-	diseases: number[];
-}
-const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
-	diseases,
-}) => {
-	const uniqueDiseases = [...new Set(diseases)];
+interface QuestionaireResultsProps {}
+const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({}) => {
+	const context = useTags();
+	const diseases = context?.diseases;
+	console.log({ diseases });
 	return (
 		<>
-			<Heading>Orientační výsledky dotazníku</Heading>
+			<Heading fontWeight="normal">Orientační výsledky dotazníku</Heading>
+			<TagContainer />
 			<Text>
 				Tento dotazník představuje pouze orientační diagnózu duševních
 				potíží. Přesné vyhodnocení vašeho duševního stavu vyžaduje
@@ -20,17 +21,20 @@ const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({
 				Podle vámi vyplněného dotazníku máte několik znaků této poruchy:
 			</Text>
 
-			{uniqueDiseases.map(disease => (
+			{diseases?.map(disease => (
 				<Text fontStyle="italic" key={dis.data[disease].title.cz}>
 					{dis.data[disease].title.cz}
 				</Text>
 			))}
 
-			<Stack>
-				<Heading fontSize="xl">Vysvětlení poruchy:</Heading>
-				{uniqueDiseases.map(disease => (
+			<Stack pb="6rem">
+				<Heading fontSize="xl" fontWeight="normal">
+					Vysvětlení poruchy:
+				</Heading>
+
+				{diseases?.map(disease => (
 					<Stack as="section" key={dis.data[disease].id}>
-						{diseases.length > 1 ? (
+						{diseases?.length > 1 ? (
 							<Heading as="h3" fontSize="xl">
 								{dis.data[disease].title.cz}
 							</Heading>

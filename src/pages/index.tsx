@@ -23,7 +23,7 @@ const index: React.FC = () => {
 				<Stack as="section" align="center">
 					<BigButton
 						text="Tuším, co mě trápí"
-						link="/"
+						link="/form"
 						w={["12em", "12.5em", "13em", "13.5em"]}
 					/>
 					<Text mt={1} fontSize={["sm", "md", "md", "md"]}>

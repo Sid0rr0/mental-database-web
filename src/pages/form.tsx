@@ -7,7 +7,7 @@ import Insurance from "../components/questionaire/Insurance";
 import Location from "../components/questionaire/Location";
 import Specialitst from "../components/questionaire/Specialitst";
 import QuestionaireProfiles from "../components/questionaire/QuestionaireProfiles";
-import Diagnosis from "../components/questionaire/diagnosis";
+import Diagnosis from "../components/questionaire/Diagnosis";
 
 interface formProps {}
 const form: React.FC<formProps> = ({}) => {

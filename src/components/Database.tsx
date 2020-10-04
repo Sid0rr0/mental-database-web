@@ -140,6 +140,7 @@ const Database: React.FC = () => {
 				tags={[
 					"Cis žena",
 					"Cis muž",
+					"Jiné",
 					"Nonbinary",
 					"Genderfluid",
 					"Transgender",
@@ -157,7 +158,7 @@ const Database: React.FC = () => {
 			/>
 			<CollapseBubble
 				title="Typ platby"
-				tags={["Hotově", "Převodem", "Kartou"]}
+				tags={["Hotově", "Převodem", "Kartou", "Předplatné"]}
 			/>
 			<Button
 				rounded={["1rem", "2rem", "3rem", "4rem"]}

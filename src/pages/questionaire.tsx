@@ -3,8 +3,11 @@ import Navbar from "../components/Navbar";
 import { Heading, Box, Text, Stack } from "@chakra-ui/core";
 import { useState } from "react";
 import * as d from "../data/questions.json";
+import * as dis from "../data/diseases.json";
 import RoundedButton from "../components/RoundedButton";
-import QuestionaireResults from "../components/QuestionaireResults";
+import Link from "next/link";
+import { useTags } from "../utils/TagContext";
+import ArrowBack from "../components/ArrowBack";
 
 interface Data {
 	id: number;
@@ -17,7 +20,19 @@ const questionaire: React.FC = () => {
 	const [step, setStep] = useState(0);
 	const [diseases, setDiseases] = useState<Array<number>>([]);
 	const [selected, setSelected] = useState<Array<number>>([]);
-	const [visibleResult, setvisibleResult] = useState(false);
+	const tags = useTags();
+
+	const addTags = () => {
+		const uniqueDiseases = [...new Set(diseases)];
+		console.log({ uniqueDiseases });
+		uniqueDiseases.map(uniqueDisease =>
+			dis.data[uniqueDisease - 1].tags.cz.map(tag => tags?.addTag(tag))
+		);
+
+		uniqueDiseases.map(uniqueDisease =>
+			tags?.addDisease(uniqueDisease - 1)
+		);
+	};
 
 	const handleClick = (data: Data) => {
 		if (diseases.includes(data.disease) && selected.includes(data.id)) {
@@ -26,6 +41,7 @@ const questionaire: React.FC = () => {
 			);
 			setDiseases(newDiseases);
 		} else {
+			//tags id start from 1 but array form 0
 			setDiseases(oldDiseases => [...oldDiseases, data.disease]);
 		}
 
@@ -91,94 +107,77 @@ const questionaire: React.FC = () => {
 				pt={["3.5rem", "6rem", "7rem", "8rem"]}
 				pb="1rem"
 			>
-				{!visibleResult ? (
-					<Stack as="section" align="center">
-						<Heading>Dotazník</Heading>
-						{step === 0 ? (
+				<Stack as="section" align="center">
+					<Heading fontWeight="normal">Dotazník</Heading>
+					{step === 0 ? (
+						<>
 							<Text textAlign="center" fontSize="xs">
 								Vyberte výroky, které pro vás platí. Neoznačujte
 								výroky, které pro vás neplatí. Po vyplnění
 								dotazníku se vám vygenerují tagy, které vám
 								pomohou k nalezení odborníka.
 							</Text>
-						) : null}
-						<Text fontSize="xs">
-							Dotazník trvá vyplnit zhruba 10 minut.
-						</Text>
-						<Stack fontSize="xl" align="center" mb="5em">
-							{page()[step]}
-							<Box
-								display="flex"
-								flexDir="row"
-								justifyContent="space-between"
-								alignItems=""
-								w="90%"
-								position="fixed"
-								left="5%"
-								top="91%"
-							>
-								<Box
-									as="button"
-									_focus={{ outline: "none" }}
-									onClick={prevStep}
-									w={5}
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 39.73 85.92"
-									>
-										<title>arrow back</title>
-										<path
-											d="M72.46,6.53,36.89,44.12a5.67,5.67,0,0,0-.06,7.76L72.46,90.4"
-											transform="translate(-33.83 -5.5)"
-											fill="none"
-											stroke="black"
-											strokeMiterlimit="10"
-											strokeWidth="3"
-										/>
-									</svg>
-								</Box>
-								<Text>{step + 1}/16</Text>
-								<Box
-									as="button"
-									_focus={{ outline: "none" }}
-									onClick={nextStep}
-									w={5}
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 39.71 85.92"
-									>
-										<title>arrow forward</title>
-										<path
-											d="M34.44,8.69,70,46.28A5.68,5.68,0,0,1,70.07,54L34.44,92.56"
-											transform="translate(-33.34 -7.66)"
-											fill="none"
-											stroke="black"
-											strokeMiterlimit="10"
-											strokeWidth="3"
-										/>
-									</svg>
-								</Box>
-							</Box>
-						</Stack>
-						{step === 15 ? (
-							<Text
-								as="button"
-								bgColor="#00F"
-								color="#FFF"
-								w="90%"
-								fontSize="xl"
-								rounded={["0.8rem", "2rem", "3rem", "4rem"]}
-								onClick={() => setvisibleResult(true)}
-							>
-								Výsledky vašeho datazníku
+							<Text fontSize="xs">
+								Dotazník trvá vyplnit zhruba 10 minut.
 							</Text>
-						) : null}
+						</>
+					) : null}
+
+					<Stack fontSize="xl" align="center" mb="5em">
+						{page()[step]}
+						<Box
+							display="flex"
+							flexDir="row"
+							justifyContent="space-between"
+							alignItems=""
+							w="90%"
+							position="fixed"
+							left="5%"
+							top="91%"
+						>
+							<Box onClick={prevStep}>
+								<ArrowBack />
+							</Box>
+							<Text>{step + 1}/16</Text>
+							<Box
+								as="button"
+								_focus={{ outline: "none" }}
+								onClick={nextStep}
+								w={5}
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 39.71 85.92"
+								>
+									<title>arrow forward</title>
+									<path
+										d="M34.44,8.69,70,46.28A5.68,5.68,0,0,1,70.07,54L34.44,92.56"
+										transform="translate(-33.34 -7.66)"
+										fill="none"
+										stroke="black"
+										strokeMiterlimit="10"
+										strokeWidth="3"
+									/>
+								</svg>
+							</Box>
+						</Box>
 					</Stack>
-				) : (
-					<QuestionaireResults diseases={diseases} />
-				)}
+					{step === 15 ? (
+						<Text
+							as="button"
+							bgColor="#00F"
+							color="#FFF"
+							w="90%"
+							fontSize="xl"
+							rounded={["0.8rem", "2rem", "3rem", "4rem"]}
+							onClick={() => addTags()}
+						>
+							<Link href="questionaire/result">
+								Výsledky vašeho datazníku
+							</Link>
+						</Text>
+					) : null}
+				</Stack>
 			</Main>
 		</>
 	);

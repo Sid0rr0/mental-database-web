@@ -3,7 +3,12 @@ import { List, ListItem, Heading } from "@chakra-ui/core";
 const Advices: React.FC = ({}) => {
 	return (
 		<>
-			<Heading textAlign="center" fontWeight="normal" fontSize="xl">
+			<Heading
+				textAlign="center"
+				fontWeight="normal"
+				fontSize="2xl"
+				textTransform="uppercase"
+			>
 				Před prvním setkáním s odborníkem
 			</Heading>
 			<List as="ol" styleType="decimal" p={8} spacing={2}>

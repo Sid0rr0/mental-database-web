@@ -43,6 +43,8 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 				_focus={{ outline: "0", bgColor: "#FFF" }}
 				_hover={{ bgColor: "#FFF" }}
 				_active={{ bgColor: "#FFF" }}
+				fontWeight="normal"
+				fontSize="2xl"
 			>
 				{title}
 			</Button>
@@ -70,7 +72,7 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								my={5}
 								onChange={newAge => setAgeSlider(newAge)}
 							>
-								<SliderTrack h={1} />
+								<SliderTrack h="1px" bgColor="#000" />
 								<SliderFilledTrack h={2} />
 								<SliderThumb
 									_focus={{ outline: "0" }}
@@ -78,7 +80,11 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 									h={4}
 									bgColor="#000"
 								>
-									<Box mb={-10} display="flex">
+									<Box
+										mb={-10}
+										display="flex"
+										fontSize="0.6em"
+									>
 										<Box>{ageSlider}</Box>
 										<Box ml={1}>let</Box>
 									</Box>
@@ -95,7 +101,7 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 								my={5}
 								onChange={newPrice => setPriceSlider(newPrice)}
 							>
-								<SliderTrack h={1} />
+								<SliderTrack h="1px" bgColor="#000" />
 								<SliderFilledTrack h={2} />
 								<SliderThumb
 									_focus={{ outline: "0" }}
@@ -103,7 +109,9 @@ const CollapseBubble: React.FC<CollapseBubbleProps> = ({
 									h={4}
 									bgColor="#000"
 								>
-									<Box mb={-10}>{priceSlider}</Box>
+									<Box mb={-10} fontSize="0.6em">
+										{priceSlider}
+									</Box>
 								</SliderThumb>
 							</Slider>
 						)

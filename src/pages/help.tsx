@@ -7,16 +7,20 @@ const help: React.FC = () => {
 	return (
 		<>
 			<Navbar />
-			<Main align="center" spacing={8} fontSize="xl">
+			<Main align="center" spacing={8} fontSize="xl" fontWeight="normal">
 				<Heading
 					as="h1"
 					textAlign="center"
 					fontSize={["3xl", "4xl", "5xl", "6xl"]}
+					fontWeight="normal"
 				>
 					Akutní pomoc
 				</Heading>
 				<Stack as="section" textAlign="center">
-					<Heading fontSize={["2xl", "3xl", "4xl", "5xl"]}>
+					<Heading
+						fontSize={["2xl", "3xl", "4xl", "5xl"]}
+						fontWeight="normal"
+					>
 						Telefonní linky
 					</Heading>
 					<HelpCard
@@ -94,7 +98,10 @@ const help: React.FC = () => {
 					/>
 				</Stack>
 				<Stack as="section" textAlign="center">
-					<Heading fontSize={["2xl", "3xl", "4xl", "5xl"]}>
+					<Heading
+						fontSize={["2xl", "3xl", "4xl", "5xl"]}
+						fontWeight="normal"
+					>
 						Krizová centra
 					</Heading>
 					<Text>Krizové centrum RIAPS Praha</Text>

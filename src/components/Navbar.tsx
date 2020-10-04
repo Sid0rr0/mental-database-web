@@ -46,7 +46,7 @@ const Navbar: React.FC = ({}) => {
 							isActive={isOpen}
 							as={Button}
 							bg="none"
-							w={["3em", "3em", "4em", "5em"]}
+							w={["3.5em", "4.5em", "5.5em", "6.5em"]}
 							mr={[1, 2, 3, 4]}
 							my="auto"
 							_active={{ bg: "none" }}
@@ -55,7 +55,7 @@ const Navbar: React.FC = ({}) => {
 							{isOpen ? (
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 85.59 34.14"
+									viewBox="0 0 90 35"
 								>
 									<title>delete menu</title>
 									<path
@@ -64,7 +64,7 @@ const Navbar: React.FC = ({}) => {
 										fill="none"
 										stroke="black"
 										strokeMiterlimit="10"
-										strokeWidth="3"
+										strokeWidth="6"
 									/>
 									<path
 										d="M92.27,34.47,53.19,48.08c-2.31.81-2.27,2.06,0,2.89L92.27,65.66"
@@ -72,7 +72,7 @@ const Navbar: React.FC = ({}) => {
 										fill="none"
 										stroke="black"
 										strokeMiterlimit="10"
-										strokeWidth="3"
+										strokeWidth="6"
 									/>
 								</svg>
 							) : (
@@ -90,7 +90,7 @@ const Navbar: React.FC = ({}) => {
 							w="100%"
 							h="100%"
 							p={0}
-							pt={["0", "0", "0", "1em"]}
+							pt={["3em", "0", "0", "1em"]}
 							border="none"
 							position="fixed"
 							left={0}

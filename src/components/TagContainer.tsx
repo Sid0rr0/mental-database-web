@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/core";
+import { Box, Text } from "@chakra-ui/core";
 import { useTags } from "../utils/TagContext";
 
 const TagContainer: React.FC = ({}) => {
@@ -19,6 +19,7 @@ const TagContainer: React.FC = ({}) => {
 			flexWrap="wrap"
 			pb={1}
 		>
+			<Text fontSize="sm">Tagy</Text>
 			{tagsContext?.tags.map(tag => (
 				<Box
 					mx={2}

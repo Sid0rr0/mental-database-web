@@ -5,7 +5,9 @@ import { Heading, Text, Box, Button } from "@chakra-ui/core";
 const Database: React.FC = () => {
 	return (
 		<>
-			<Heading pt="-5em">Databáze</Heading>
+			<Heading pt="-5em" fontWeight="normal">
+				Databáze
+			</Heading>
 			<Box fontSize="sm" mb={4}>
 				<Text textAlign="center">
 					Zadejte tagy v kategoriích podle vašich požadavků.

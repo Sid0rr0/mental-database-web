@@ -8,7 +8,11 @@ const information: React.FC = ({}) => {
 			<Navbar />
 			<Main align="center" px={4} pt="8rem" spacing="4rem" fontSize="xl">
 				<Stack as="section" align="center">
-					<Heading as="h1" fontSize={["3xl", "4xl", "5xl", "6xl"]}>
+					<Heading
+						as="h1"
+						fontSize={["3xl", "4xl", "5xl", "6xl"]}
+						fontWeight="normal"
+					>
 						Informace
 					</Heading>
 					<Text>Před prvním setkáním s odborníkem</Text>
@@ -40,7 +44,9 @@ const information: React.FC = ({}) => {
 					<Text>Jak takovou cestu začít a jak asi bude vypadat?</Text>
 				</Stack>
 				<section>
-					<Heading>První kontakt - objednání</Heading>
+					<Heading fontWeight="normal">
+						První kontakt - objednání
+					</Heading>
 					<Text>
 						Pokud si psychologa hledáte sami bez doporučení, na
 						internetu byste určitě měli najít kontaktní informace.
@@ -63,7 +69,7 @@ const information: React.FC = ({}) => {
 					</Text>
 				</section>
 				<section>
-					<Heading>První sezení</Heading>
+					<Heading fontWeight="normal">První sezení</Heading>
 					<Text>
 						Někteří psychoterapeuti mají ke svým ordinacím
 						připojenou čekárnu a z ní si vás také v určený čas
@@ -100,7 +106,7 @@ const information: React.FC = ({}) => {
 					</Text>
 				</section>
 				<section>
-					<Heading>
+					<Heading fontWeight="normal">
 						Časté obavy oddalující první návštěvu psychologa
 					</Heading>
 					<Text>

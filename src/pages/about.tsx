@@ -7,7 +7,7 @@ const about: React.FC = () => {
 		<>
 			<Navbar />
 			<Main px={4} align="center">
-				<Heading as="h1" fontSize="4xl">
+				<Heading as="h1" fontSize="4xl" fontWeight="normal">
 					O webu
 				</Heading>
 				<Text fontSize="2xl">

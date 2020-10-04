@@ -58,7 +58,7 @@ const index: React.FC = () => {
 					<Advices />
 				</Stack>
 				<Stack as="section" align="center">
-					<Heading>Akutní pomoc</Heading>
+					<Heading fontWeight="normal">Akutní pomoc</Heading>
 					<HelpCard
 						title="Linka první psychické pomoci"
 						numbers={["116 123"]}
@@ -89,7 +89,7 @@ const index: React.FC = () => {
 					<Database />
 				</Stack>
 				<Stack as="section" align="center">
-					<Heading>O webu</Heading>
+					<Heading fontWeight="normal">O webu</Heading>
 					<Text>
 						Web DUŠEVNÍ (data)BÁZE je bakalářský projekt na Vysoké
 						škole uměleckoprůmyslové v ateliéru Grafického designu a

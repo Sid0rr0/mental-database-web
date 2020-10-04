@@ -35,7 +35,7 @@ const QuestionaireResults: React.FC<QuestionaireResultsProps> = ({}) => {
 				{diseases?.map(disease => (
 					<Stack as="section" key={dis.data[disease].id}>
 						{diseases?.length > 1 ? (
-							<Heading as="h3" fontSize="xl">
+							<Heading as="h3" fontSize="xl" fontWeight="normal">
 								{dis.data[disease].title.cz}
 							</Heading>
 						) : null}

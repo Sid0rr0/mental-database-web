@@ -33,7 +33,7 @@ const Tag: React.FC<TagProps> = ({ name, noBorder }) => {
 		<Box
 			as="button"
 			rounded="20px"
-			border={noBorder ? "" : bgColor === "" ? "1px solid #000" : ""}
+			border={noBorder ? "" : bgColor === "" ? "0.5px solid #000" : ""}
 			display="flex"
 			alignItems="center"
 			justifyContent="center"

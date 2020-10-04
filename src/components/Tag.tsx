@@ -4,8 +4,9 @@ import { useTags } from "../utils/TagContext";
 
 interface TagProps {
 	name: string;
+	noBorder?: boolean;
 }
-const Tag: React.FC<TagProps> = ({ name }) => {
+const Tag: React.FC<TagProps> = ({ name, noBorder }) => {
 	const [bgColor, setBgColor] = useState("");
 	const tagsContext = useTags();
 	const tags = tagsContext?.tags;
@@ -32,7 +33,7 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 		<Box
 			as="button"
 			rounded="20px"
-			border={bgColor === "" ? "1px solid #000" : ""}
+			border={noBorder ? "" : bgColor === "" ? "1px solid #000" : ""}
 			display="flex"
 			alignItems="center"
 			justifyContent="center"
@@ -43,7 +44,7 @@ const Tag: React.FC<TagProps> = ({ name }) => {
 			_focus={{ outline: "none" }}
 			cursor="pointer"
 			onClick={handleSelect}
-			bgColor={bgColor}
+			bgColor={bgColor || "#FFF"}
 			color={bgColor === "" ? "#000" : "#FFF"}
 		>
 			{/* {name.charAt(0).toUpperCase() + name.slice(1)} */ name}

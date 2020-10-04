@@ -2,9 +2,14 @@ import { Text } from "@chakra-ui/core";
 
 interface RoundedButtonProps {
 	text: string;
-	clicked: boolean;
+	clicked?: boolean;
+	fontSize?: string;
 }
-const RoundedButton: React.FC<RoundedButtonProps> = ({ text, clicked }) => {
+const RoundedButton: React.FC<RoundedButtonProps> = ({
+	text,
+	clicked,
+	fontSize,
+}) => {
 	return (
 		<Text
 			as="button"
@@ -15,6 +20,8 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({ text, clicked }) => {
 			px={1}
 			_focus={{ outline: "none" }}
 			_active={{ bgColor: "none" }}
+			fontSize={fontSize}
+			textAlign="left"
 		>
 			{text}
 		</Text>
